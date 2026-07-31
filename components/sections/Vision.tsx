@@ -1,6 +1,6 @@
 "use client";
 
-// VISTA · Sección de visión por computación (video en vivo + fotos).
+// VISTA · Sección de visión por computación (video en vivo).
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
 import { fadeUp } from "@/components/ui/animations";
@@ -27,16 +27,6 @@ export function Vision() {
           <p className="mt-5 max-w-[46ch] text-[15px] leading-relaxed text-white/70">
             {vision.descripcion}
           </p>
-          <div className="mt-6 flex flex-col gap-3">
-            {vision.bullets.map((b) => (
-              <div key={b} className="flex items-center gap-3">
-                <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-[#2b2741]">
-                  <span className="h-2.5 w-2.5 rounded-sm border-[1.5px] border-[#9184d9]" />
-                </span>
-                <span className="text-sm text-white/85">{b}</span>
-              </div>
-            ))}
-          </div>
         </motion.div>
 
         <motion.div

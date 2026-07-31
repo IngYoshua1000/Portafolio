@@ -39,10 +39,16 @@ export const servicios: Servicio[] = [
       "Dashboards con ETL en Power Query para facturación, operaciones, producción e indicadores HSEQ.",
   },
   {
+    icon: "📋",
+    titulo: "Excel avanzado & estandarización",
+    texto:
+      "Matrices de seguimiento, estandarización de procesos y plantillas automatizadas con fórmulas para ordenar la operación.",
+  },
+  {
     icon: "🤖",
     titulo: "Automatización con IA · n8n",
     texto:
-      "Flujos, chatbots y agentes en producción (n8n + API de OpenAI) para reportes, validación de correos e informes.",
+      "Flujos, chatbots y agentes en producción con n8n e IA para reportes, validación de correos e informes.",
   },
   {
     icon: "👁️",
@@ -69,11 +75,6 @@ export const vision: SeccionVision = {
   titulo: "Visión por computación: detección y segmentación de objetos",
   descripcion:
     "Desarrollo modelos de visión por computación a medida para cada caso: toma del dataset, etiquetado, entrenamiento, generación del modelo y mejora continua — para detectar, identificar y segmentar objetos y personas en video en tiempo real, desde equipos de protección hasta placas, vehículos, mascotas y mucho más.",
-  bullets: [
-    "Detección de objetos con visión por computación",
-    "Detección e identificación de rostros y personas",
-    "Funciona sobre cámaras de seguridad ya instaladas",
-  ],
   video: "/vision/epp-detector.mp4",
   modelo: "best_eppv4_768.onnx",
 };
@@ -82,7 +83,7 @@ export const automatizacion: SeccionAutomatizacion = {
   badge: "Automatización · IA",
   titulo: "Flujos inteligentes que trabajan por ti",
   descripcion:
-    "Diseño flujos y agentes en n8n conectados a la API de OpenAI: un chatbot en producción que interpreta los dashboards por área, además de agentes que validan correos, generan reportes diarios y revisan informes automáticamente.",
+    "Diseño flujos y agentes en n8n conectados a modelos de IA —en la nube o locales, a través de cualquier API—: un chatbot en producción que interpreta los dashboards por área, además de agentes que validan correos, generan reportes diarios y revisan informes automáticamente.",
   bullets: [
     "Chatbot que interpreta tus dashboards por área",
     "Agentes para validación de correos y reportes diarios",
@@ -115,20 +116,20 @@ export const proyectos: Proyecto[] = [
   {
     titulo: "Chatbot que interpreta dashboards",
     texto:
-      "Chatbot en producción (n8n + API de OpenAI) que interpreta los dashboards por área de la empresa.",
-    tags: ["n8n", "OpenAI", "Power BI"],
+      "Chatbot en producción (n8n + IA) que interpreta los dashboards por área de la empresa.",
+    tags: ["n8n", "IA", "Power BI"],
   },
   {
     titulo: "Agentes de IA para procesos",
     texto:
       "Agentes parametrizados para validación de correos, reportes diarios y revisión de informes.",
-    tags: ["n8n", "OpenAI", "Automatización"],
+    tags: ["n8n", "IA", "Automatización"],
   },
   {
-    titulo: "Matrices y dashboards de gestión",
+    titulo: "Estandarización de matrices de seguimiento",
     texto:
-      "Diseño desde cero de matrices y tableros de nómina, operaciones, HSEQ y facturación.",
-    tags: ["Power BI", "Power Query", "ETL"],
+      "Diseño y estandarización desde cero de matrices de nómina, operaciones, contratos y HSEQ que unifican y ordenan la información de la empresa.",
+    tags: ["Excel", "Estandarización", "ETL"],
   },
 ];
 
@@ -136,8 +137,9 @@ export const skills: string[] = [
   "Power BI",
   "Power Query (ETL)",
   "Excel avanzado",
+  "Estandarización de procesos",
   "n8n",
-  "API de OpenAI",
+  "Integración de APIs",
   "Visión por computación",
   "Python",
   "Microsoft 365",

@@ -24,7 +24,6 @@ export interface SeccionVision {
   badge: string;
   titulo: string;
   descripcion: string;
-  bullets: string[];
   video: string;
   modelo: string;
 }
