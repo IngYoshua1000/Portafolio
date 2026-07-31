@@ -27,7 +27,6 @@ export interface SeccionVision {
   bullets: string[];
   video: string;
   modelo: string;
-  fotos: string[];
 }
 
 export interface SeccionAutomatizacion {

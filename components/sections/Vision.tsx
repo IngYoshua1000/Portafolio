@@ -5,12 +5,9 @@ import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
 import { fadeUp } from "@/components/ui/animations";
 import { LiveCam } from "@/components/media/LiveCam";
-import { useLightbox } from "@/controllers/LightboxProvider";
 import { vision } from "@/models/portfolio";
 
 export function Vision() {
-  const openLightbox = useLightbox();
-
   return (
     <Section id="vision" className="bg-[#0e1426]">
       <div className="grid items-center gap-10 lg:grid-cols-[1fr_1.1fr]">
@@ -50,22 +47,6 @@ export function Vision() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <LiveCam src={vision.video} modelo={vision.modelo} />
-          <div className="mt-4 grid grid-cols-2 gap-4">
-            {vision.fotos.map((f) => (
-              <button
-                key={f}
-                onClick={() => openLightbox(f)}
-                className="group overflow-hidden rounded-xl border border-white/10"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={f}
-                  alt="Detección"
-                  className="h-28 w-full object-cover transition duration-300 group-hover:scale-105 sm:h-32"
-                />
-              </button>
-            ))}
-          </div>
         </motion.div>
       </div>
     </Section>

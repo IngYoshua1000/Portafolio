@@ -66,7 +66,7 @@ export const servicios: Servicio[] = [
 
 export const vision: SeccionVision = {
   badge: "Visión por computación · IA",
-  titulo: "Visión por computación: detección y segmentación de cualquier objeto",
+  titulo: "Visión por computación: detección y segmentación de objetos",
   descripcion:
     "Desarrollo modelos de visión por computación a medida para cada caso: toma del dataset, etiquetado, entrenamiento, generación del modelo y mejora continua — para detectar, identificar y segmentar objetos y personas en video en tiempo real, desde equipos de protección hasta placas, vehículos, mascotas y mucho más.",
   bullets: [
@@ -76,7 +76,6 @@ export const vision: SeccionVision = {
   ],
   video: "/vision/epp-detector.mp4",
   modelo: "best_eppv4_768.onnx",
-  fotos: ["/vision/deteccion-1.jpeg", "/vision/deteccion-2.jpeg"],
 };
 
 export const automatizacion: SeccionAutomatizacion = {
