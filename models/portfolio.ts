@@ -126,10 +126,10 @@ export const proyectos: Proyecto[] = [
     tags: ["n8n", "IA", "Automatización"],
   },
   {
-    titulo: "Estandarización de matrices de seguimiento",
+    titulo: "Analítica de datos: de Excel a Power BI",
     texto:
-      "Diseño y estandarización desde cero de matrices de nómina, operaciones, contratos y HSEQ que unifican y ordenan la información de la empresa.",
-    tags: ["Excel", "Estandarización", "ETL"],
+      "Estandarización de matrices de seguimiento en Excel y su evolución a dashboards en Power BI: nómina, operaciones, contratos, HSEQ y facturación en una sola fuente de consulta.",
+    tags: ["Excel", "Power Query", "Power BI"],
   },
 ];
 

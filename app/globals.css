@@ -23,6 +23,17 @@ body {
   font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  /* Disuasivo de copiado: bloquea selección de texto */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* Evita arrastrar o guardar imágenes/video */
+img,
+video {
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 /* Fondo con gradiente animado sutil */
